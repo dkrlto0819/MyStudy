@@ -5,6 +5,8 @@ import com.example.myfirstproject.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class StudentService {
     @Autowired
@@ -13,4 +15,6 @@ public class StudentService {
     public void create(Student student) {
         studentRepository.save(student);
     }
+
+    public List<Student> list() { return (List<Student>) studentRepository.findAll(); }
 }
