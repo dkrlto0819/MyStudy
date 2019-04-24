@@ -16,5 +16,10 @@ public class StudentService {
         studentRepository.save(student);
     }
 
-    public List<Student> list() { return (List<Student>) studentRepository.findAll(); }
+    public List<Student> list() {
+        List<Student> result = (List<Student>) studentRepository.findAll();
+        System.out.println(result.get(0));
+//        System.out.println(result.get(0).getId());
+        return result;
+    }
 }

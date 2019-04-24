@@ -4,7 +4,6 @@ import com.example.myfirstproject.model.Student;
 import com.example.myfirstproject.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
